@@ -39,7 +39,7 @@ object Flight {
 
 object FlightService extends IOApp with CirceInstances {
 
-  def flgihtNumberExists(numbers: String, number: String) =
+  private def flgihtNumberExists(numbers: String, number: String) =
     numbers.split(" ").contains(number)
   def flightExists(flight: Flight, redis: RedisClient,
                    postgres: Statement): Boolean = {
