@@ -11,7 +11,9 @@ libraryDependencies ++= Seq(
   "io.circe" %% "circe-core" % "0.14.1",
   "io.circe" %% "circe-generic" % "0.14.1",
   "io.circe" %% "circe-parser" % "0.14.1",
-  "org.typelevel" %% "cats-effect" % "3.2.9"
+  "org.typelevel" %% "cats-effect" % "3.2.9",
+  "net.debasishg" %% "redisclient" % "3.42",
+  "org.postgresql" % "postgresql" % "42.5.4"
 )
 
 mainClass in Compile := Some("gpt.FlightService")
